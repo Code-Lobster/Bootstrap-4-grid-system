@@ -3,8 +3,11 @@ module.exports = function(grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 		sass: {
 			dist: {
+                options: {
+                    style: 'expanded',
+                },
 				files: {
-					'css/main.css' : 'scss/bootstrap-grid.scss'
+					'css/bootstrap-grid.css' : 'scss/bootstrap-grid.scss'
 				}
 			}
 		},
