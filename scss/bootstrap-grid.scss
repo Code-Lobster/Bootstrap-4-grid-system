@@ -61,5 +61,7 @@ $enable-grid-classes:        true !default;
 @import "mixins/breakpoints";
 @import "mixins/grid-framework";
 @import "mixins/grid";
-
 @import "grid";
+
+//responsive utilities
+@import "utilities-responsive";
