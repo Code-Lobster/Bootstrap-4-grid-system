@@ -14,6 +14,8 @@
     padding-right: ($gutter / 2);
   }
   @each $breakpoint in map-keys($breakpoints) {
+      
+    //creates col-md-1 tp col-md-12 and others and extends %grid-column
     @for $i from 1 through $columns {
       .col-#{$breakpoint}-#{$i} {
         @extend %grid-column;
@@ -21,7 +23,7 @@
     }
     @include media-breakpoint-up($breakpoint) {
       // Work around cross-media @extend (https://github.com/sass/sass/issues/1050)
-      %grid-column-float-#{$breakpoint} {
+      %grid-column-float-#{$breakpoint} {//<- why define this when it's only used once
         float: left;
       }
       @for $i from 1 through $columns {

@@ -48,8 +48,8 @@ $grid-columns:               12 !default;
 $grid-gutter-width:          1.875rem !default; // 30px
 
 //missing variables
-$enable-flex:                0;
-$enable-grid-classes:        0;
+$enable-flex:               false !default;
+$enable-grid-classes:        true !default;
 
 //
 // Grid mixins
