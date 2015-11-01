@@ -13,3 +13,8 @@ Include one of the precompiled css files in css/ folder, to get a custom build f
     grunt
 ```
 That's it, your compiled css will be available in css/ folder.
+
+##Included
+* Standard Bootstrap grid classes: columns, offsets, push and pull classes
+* Standard Bootstrap responsive utility classes: .visible-*, .hidden-*
+* Standard Bootstrap print classes: .visible-print, .hidden-print
