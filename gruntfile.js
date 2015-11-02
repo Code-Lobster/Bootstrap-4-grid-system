@@ -4,6 +4,14 @@ module.exports = function(grunt) {
 		sass: {
 			dist: {
                 options: {
+                    style: 'compressed ',
+                },
+				files: {
+					'css/bootstrap-grid.min.css' : 'scss/bootstrap-grid.scss'
+				}
+			},
+            dev: {
+                options: {
                     style: 'expanded',
                 },
 				files: {
@@ -11,6 +19,7 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+
 		watch: {
 			css: {
 				files: '**/*.scss',
